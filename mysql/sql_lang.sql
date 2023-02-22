@@ -1,0 +1,16 @@
+-- SELECT * FROM users;
+-- insert into users (username,password) values ('chenziwen','123456');
+-- update users set password = "45454545" where id in (1,2);
+-- update users set password = "woainihaoba",status = 1 where id = 2;
+-- into `users` (username,password) values ("chiko","5201314");
+-- delete from users where id = 7
+-- select * from users;
+-- 升序排列
+-- select * from users order by status asc;
+-- 降序排列
+-- select * from users order by status desc;
+-- 先按status升序，再按username字母降序排列
+-- select * from users order by status asc,username desc;
+
+-- count(*) 查询指定列的总条数 ，用as给列起别名
+-- select count(*) as "count" from users;

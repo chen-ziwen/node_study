@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
+
+<body>
+    <button id="btn1">GET请求</button>
+    <button id="btn2">POST请求</button>
+</body>
+
+<script>
+    $(function () {
+        // 测试get 接口
+        $('#btn1').on('click', () => {
+            $.ajax({
+                type: 'GET',
+                url: 'http://127.0.0.1/api/user',
+                data: {
+                    name: 'chiko',
+                    age: 23,
+                    gender: '男'
+                },
+                success: (res) => {
+                    console.log(res);
+                }
+            })
+        })
+        $('#btn2').on('click', () => {
+            $.ajax({
+                type: 'POST',
+                url: 'http://127.0.0.1/api/user',
+                data: {
+                    name: 'ange',
+                    age: 23,
+                    gender: '女'
+                },
+                success: (res) => {
+                    console.log(res);
+                }
+            })
+        })
+        // 测试post 接口
+    })
+</script>
+
+</html>
