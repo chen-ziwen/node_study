@@ -24,7 +24,7 @@ const stop = (req, res, next) => {
 }
 
 app.use(stop); // 不使用use注册的中间件都属于局部生效的中间件
-app.use('/message', router);
+app.use('/message', router);  // 往全部路由的请求前面加上/message前缀
 app.listen(80, () => {
     console.log('web sevre running at http://127.0.0.1')
 })
