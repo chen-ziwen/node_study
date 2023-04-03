@@ -30,7 +30,6 @@ db.query(str, (err, results) => {
 //         console.log('插入成功');
 //     };
 // })
-
 // 快捷插入语法
 // const insert = "insert into users set ?"
 // const user = [

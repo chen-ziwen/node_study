@@ -10,11 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "crawler": "^1.4.0",
     "express": "^4.18.2",
     "express-jwt": "^8.4.1",
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.0",
     "moment": "^2.29.4",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "node-gyp": "^8.4.1",
+    "request": "^2.88.2"
   }
 }
