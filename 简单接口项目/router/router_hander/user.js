@@ -68,12 +68,11 @@ const login = async (req, res) => {
         const tokenStr = jwt.sign(user, config.jwtSecreKey, {
             expiresIn: '10h',// token 有效期为10小时
         });
-        // 下面是登录成功的逻辑
         res.send({
             status: 0,
             message: '登录成功！',
-            // 因为必须拼接Bearer，当然客户端去拼接也ok
-            // 为了方便客户端使用 Token，在服务器端直接拼接上 Bearer 的前缀
+            // 因为请求必须拼接Bearer，当然客户端去拼接也ok
+            // 为了方便客户端使用Token，在服务器端直接拼接上 Bearer 的前缀
             token: 'Bearer ' + tokenStr,
         })
 
