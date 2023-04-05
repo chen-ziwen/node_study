@@ -15,9 +15,6 @@ const router = express.Router();
 router.post('/reguser', expressJoi(reg_login_schema), userHandle.regUser);
 
 // 登录
-router.post('/login', userHandle.login);
-
-// 测试
-router.get('/test', userHandle.test);
+router.post('/login', expressJoi(reg_login_schema), userHandle.login);
 
 module.exports = router;

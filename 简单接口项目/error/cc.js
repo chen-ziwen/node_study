@@ -1,4 +1,4 @@
-// 响应数据的中间件
+// 响应错误数据的中间件 传入自定义错误信息
 const cc = (req, res, next) => {
     // status = 0 为成功； status = 1 为失败； 默认将 status 的值设置为 1，方便处理失败的情况
     res.cc = function (err, status = 1) {
